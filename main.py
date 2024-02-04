@@ -1,5 +1,6 @@
 import click
 import os
+from numpy import outer
 import pandas
 
 from json import dumps
@@ -20,8 +21,11 @@ def main(**kwargs) -> None:
         
     output: str = f'{kwargs.get("output")}/{username}'
 
-    if(not os.path.exists(output)): 
-        os.mkdir(output)
+    #if(not os.path.exists(output)): 
+     #   print(output)
+      #  os.path.mkdirs(output)
+    if not os.path.isdir(output) and bool(output):
+        os.makedirs(output)
 
     with open(f'{output}/{username}.json', 'w') as file:
         file.write(dumps(data, indent=4, ensure_ascii=False))
