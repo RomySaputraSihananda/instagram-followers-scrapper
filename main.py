@@ -21,9 +21,6 @@ def main(**kwargs) -> None:
         
     output: str = f'{kwargs.get("output")}/{username}'
 
-    #if(not os.path.exists(output)): 
-     #   print(output)
-      #  os.path.mkdirs(output)
     if not os.path.isdir(output) and bool(output):
         os.makedirs(output)
 
