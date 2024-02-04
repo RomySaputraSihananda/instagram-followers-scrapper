@@ -1,9 +1,7 @@
 import os
 
-from json import dumps
 from requests import Session, Response
 from dotenv import load_dotenv
-from typing import List, Dict
 
 import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [ %(levelname)s ]\t:: %(message)s', datefmt="%Y-%m-%dT%H:%M:%S")
