@@ -41,12 +41,10 @@ class Followers:
         while(True):
             response: Response = self.__requests.get(f'https://www.instagram.com/api/v1/friendships/{id}/followers/',
                                             params={
-                                                'count': 12,
+                                                'count': 24,
                                                 'max_id': next_max_id
                                             })
             data: dict = response.json()
-            #del data["users"]
-            #print(data)
             
             if(response.status_code != 200): return logging.error('failed to fetch this account')
 
