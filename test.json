@@ -1,0 +1,94 @@
+{
+    "data": {
+        "user": {
+            "ai_agent_type": null,
+            "biography": "----[---->+<]>++.",
+            "bio_links": [
+                {
+                    "title": "hohoho",
+                    "lynx_url": "https://l.instagram.com/?u=https%3A%2F%2Fromysaputrasihananda.github.io%2F&e=AT1ol77dUPqt7badK3zDhMLupjoAEs3nomQZfsCQ4FZwwBZ4SF6005Va02uiaGl5VGsq561XnQzIgOtGZYEdVJvwFW7B30JYe9FPEEw",
+                    "url": "https://romysaputrasihananda.github.io",
+                    "link_type": "external"
+                }
+            ],
+            "fb_profile_biolink": null,
+            "biography_with_entities": {
+                "raw_text": "----[---->+<]>++.",
+                "entities": []
+            },
+            "blocked_by_viewer": false,
+            "restricted_by_viewer": false,
+            "country_block": false,
+            "eimu_id": "17846082956555094",
+            "external_url": "https://romysaputrasihananda.github.io/",
+            "external_url_linkshimmed": "https://l.instagram.com/?u=https%3A%2F%2Fromysaputrasihananda.github.io%2F&e=AT1l0i100tay1TthX0kaSZh5q9UX0rXEKvd0b3Ix9iHJe2EVpPHa4VuqDmfmyTWywXQ_uNKnvwMxG-jhIafhDPunzVnSiyE4VtYxO3k",
+            "edge_followed_by": {
+                "count": 1938
+            },
+            "fbid": "17841446652809883",
+            "followed_by_viewer": false,
+            "edge_follow": {
+                "count": 132
+            },
+            "follows_viewer": false,
+            "full_name": "",
+            "group_metadata": null,
+            "has_ar_effects": false,
+            "has_clips": true,
+            "has_guides": false,
+            "has_chaining": true,
+            "has_channel": false,
+            "has_blocked_viewer": false,
+            "highlight_reel_count": 1,
+            "has_requested_viewer": false,
+            "hide_like_and_view_counts": false,
+            "id": "46719067093",
+            "is_business_account": false,
+            "is_professional_account": false,
+            "is_supervision_enabled": true,
+            "is_guardian_of_viewer": false,
+            "is_supervised_by_viewer": false,
+            "is_supervised_user": false,
+            "is_embeds_disabled": false,
+            "is_joined_recently": false,
+            "guardian_id": null,
+            "business_address_json": null,
+            "business_contact_method": "UNKNOWN",
+            "business_email": null,
+            "business_phone_number": null,
+            "business_category_name": null,
+            "overall_category_name": null,
+            "category_enum": null,
+            "category_name": null,
+            "is_private": true,
+            "is_verified": false,
+            "is_verified_by_mv4b": false,
+            "is_regulated_c18": false,
+            "edge_mutual_followed_by": {
+                "count": 0,
+                "edges": []
+            },
+            "pinned_channels_list_count": 0,
+            "profile_pic_url": "https://instagram.fcgk9-1.fna.fbcdn.net/v/t51.2885-19/175528500_943726476461534_7522721559249567006_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk9-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oPuNf4adBOsAX_1rjpw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfCDcvJkFA-FCJ7alLlSHxxY4f5oAgFH0qbjpATn2N_eTQ&oe=65C2B133&_nc_sid=8b3546",
+            "profile_pic_url_hd": "https://instagram.fcgk9-1.fna.fbcdn.net/v/t51.2885-19/175528500_943726476461534_7522721559249567006_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fcgk9-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oPuNf4adBOsAX_1rjpw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBRZ4-06WcWS-GGygu0UC4dutNwkDhyaDR4l6lIIGw3iw&oe=65C2B133&_nc_sid=8b3546",
+            "requested_by_viewer": false,
+            "should_show_category": false,
+            "should_show_public_contacts": false,
+            "show_account_transparency_details": true,
+            "transparency_label": null,
+            "transparency_product": null,
+            "username": "romys.12",
+            "connected_fb_page": null,
+            "pronouns": [],
+            "edge_owner_to_timeline_media": {
+                "count": 30,
+                "page_info": {
+                    "has_next_page": true,
+                    "end_cursor": ""
+                },
+                "edges": []
+            }
+        }
+    },
+    "status": "ok"
+}
