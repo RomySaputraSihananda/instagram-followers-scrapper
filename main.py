@@ -1,26 +1,34 @@
-import requests
+import click
 import os
+import pandas
 
 from json import dumps
-from dotenv import load_dotenv
 
-load_dotenv()
+from followers import Followers
 
-headers = {
-    'Cookie': os.getenv('COOKIE'),
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'X-Ig-App-Id': '936619743392459',
-}
+@click.command()
+@click.option('--cookie')
+@click.option('--username', default='romys.12')
+@click.option('--output', default='data')
+def main(**kwargs) -> None:
+    username: str = str(kwargs.get('username'))
+    
+    followers: Followers = Followers(kwargs.get('cookie'))
+    
+    data: dict | None = followers.get_followers_by_username(username) 
+    if(not data): return None
+        
+    output: str = f'{kwargs.get("output")}/{username}'
 
+    if(not os.path.exists(output)): 
+        os.mkdir(output)
 
-response = requests.get('https://www.instagram.com/api/v1/friendships/1536133488/following/', headers=headers,
-                        params={
-                            'count': 200,
-                            'max_id': 0
-                        })
-#response = requests.get('https://i.instagram.com/api/v1/users/web_profile_info/?username=romys.12', headers=headers)
+    with open(f'{output}/{username}.json', 'w') as file:
+        file.write(dumps(data, indent=4, ensure_ascii=False))
 
-followers: list = response.json()['users']
+    df = pandas.DataFrame(data=data['followers'])
+    df.to_csv(f'{output}/{username}.csv', sep=',')
+        
 
-for i, follower in enumerate(followers):
-    print(i + 1, follower['username'])
+if __name__ == "__main__":
+    main()
